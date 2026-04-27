@@ -37,6 +37,67 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
+
+        /* Portfolio watermark: visible deterrent for screenshots, demos, and printouts */
+        .portfolio-watermark {
+            position: fixed;
+            top: -25vh;
+            left: -25vw;
+            width: 150vw;
+            height: 150vh;
+            display: grid;
+            grid-template-columns: repeat(5, minmax(260px, 1fr));
+            grid-auto-rows: 170px;
+            align-items: center;
+            justify-items: center;
+            gap: 24px 56px;
+            transform: rotate(-28deg);
+            pointer-events: none;
+            user-select: none;
+            z-index: 2147483647;
+            overflow: hidden;
+        }
+        .portfolio-watermark span {
+            color: rgba(17, 24, 39, 0.13);
+            font-size: clamp(18px, 2.1vw, 34px);
+            font-weight: 800;
+            letter-spacing: 0.18em;
+            line-height: 1.2;
+            text-align: center;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+        .portfolio-watermark-badge {
+            position: fixed;
+            right: 16px;
+            bottom: 16px;
+            padding: 10px 14px;
+            border: 1px solid rgba(17, 24, 39, 0.15);
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.86);
+            color: rgba(17, 24, 39, 0.72);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+            backdrop-filter: blur(8px);
+            pointer-events: none;
+            user-select: none;
+            z-index: 2147483647;
+        }
+        @media print {
+            .portfolio-watermark,
+            .portfolio-watermark-badge {
+                display: block !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .portfolio-watermark span {
+                color: rgba(17, 24, 39, 0.18);
+            }
+        }
+
     </style>
 <script src="/_aistudio-iframe.js"></script><script>
         window.STATIC_CONFIG = {"projectId":"gen-lang-client-0063084408","appId":"1:800074576295:web:5f39df2c21d92c0a638682","apiKey":"AIzaSyB8MyaeLzigkRCV3QytPJI-KiESzyn8Xic","authDomain":"gen-lang-client-0063084408.firebaseapp.com","firestoreDatabaseId":"ai-studio-0cea6727-8f8d-4120-962c-f20166bee96c","storageBucket":"gen-lang-client-0063084408.firebasestorage.app","messagingSenderId":"800074576295","measurementId":""};
@@ -45,6 +106,40 @@
       </script>
 </head>
 <body class="bg-[#F8F9FA] text-[#1A1A1A]">
+    <div class="portfolio-watermark" aria-hidden="true">
+        <span>Portfolio Sample • Do Not Copy</span>
+        <span>QA Sample Work • Watermarked</span>
+        <span>Portfolio Sample • Do Not Copy</span>
+        <span>QA Sample Work • Watermarked</span>
+        <span>Portfolio Sample • Do Not Copy</span>
+        <span>QA Sample Work • Watermarked</span>
+        <span>Portfolio Sample • Do Not Copy</span>
+        <span>QA Sample Work • Watermarked</span>
+        <span>Portfolio Sample • Do Not Copy</span>
+        <span>QA Sample Work • Watermarked</span>
+        <span>Portfolio Sample • Do Not Copy</span>
+        <span>QA Sample Work • Watermarked</span>
+        <span>Portfolio Sample • Do Not Copy</span>
+        <span>QA Sample Work • Watermarked</span>
+        <span>Portfolio Sample • Do Not Copy</span>
+        <span>QA Sample Work • Watermarked</span>
+        <span>Portfolio Sample • Do Not Copy</span>
+        <span>QA Sample Work • Watermarked</span>
+        <span>Portfolio Sample • Do Not Copy</span>
+        <span>QA Sample Work • Watermarked</span>
+        <span>Portfolio Sample • Do Not Copy</span>
+        <span>QA Sample Work • Watermarked</span>
+        <span>Portfolio Sample • Do Not Copy</span>
+        <span>QA Sample Work • Watermarked</span>
+        <span>Portfolio Sample • Do Not Copy</span>
+        <span>QA Sample Work • Watermarked</span>
+        <span>Portfolio Sample • Do Not Copy</span>
+        <span>QA Sample Work • Watermarked</span>
+        <span>Portfolio Sample • Do Not Copy</span>
+        <span>QA Sample Work • Watermarked</span>
+    </div>
+    <div class="portfolio-watermark-badge" aria-hidden="true">Portfolio Sample • Do Not Copy</div>
+
     <!-- 
         SECURITY NOTE:
         1. This file is intended for public read-only access by default.
@@ -177,8 +272,13 @@
                         children: [
                             new Paragraph({
                                 alignment: AlignmentType.CENTER,
-                                spacing: { after: 200 },
+                                spacing: { after: 80 },
                                 children: [new TextRun({ text: "LEGAL CASE REPOSITORY", bold: true, size: 28 })]
+                            }),
+                            new Paragraph({
+                                alignment: AlignmentType.CENTER,
+                                spacing: { after: 200 },
+                                children: [new TextRun({ text: "PORTFOLIO SAMPLE - DO NOT COPY", bold: true, size: 18, color: "777777" })]
                             }),
                             new Table({
                                 width: { size: 100, type: WidthType.PERCENTAGE },
