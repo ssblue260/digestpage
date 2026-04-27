@@ -112,9 +112,9 @@ The test cases cover:
 
 **File:** `index_watermarked.html`
 
-This is the watermarked HTML version of the sample application. It may be used as supporting material, but for Upwork portfolio uploads, screenshots and QA documents are usually more professional and easier for clients to review.
+This is the watermarked HTML version of the sample application. It may be used as supporting material.
 
----
+--
 
 ## QA Skills Demonstrated
 
