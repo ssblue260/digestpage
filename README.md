@@ -131,45 +131,14 @@ This portfolio sample demonstrates the following QA capabilities:
 - Communicating expected vs. actual results clearly
 - Providing practical QA recommendations
 
----
-
-## Suggested Upwork Portfolio Title
-
-**Legal Case Repository Web App — QA Testing Portfolio Sample**
-
----
-
-## Suggested Upwork Portfolio Description
-
-This is a QA portfolio sample for a web-based Legal Case Repository application. I performed functional testing, smoke testing, regression review, search/filter validation, UI behavior checking, case details verification, export review, and admin visibility testing.
-
-The portfolio includes watermarked screenshots, a short QA test report, sample test cases, and a sample bug report. These materials demonstrate my ability to document testing work clearly, identify defects, prepare test cases, and communicate QA findings in a professional format.
-
----
-
-## Suggested Skills to Tag on Upwork
-
-- Manual Testing
-- QA Testing
-- Web Testing
-- Functional Testing
-- Regression Testing
-- Test Cases
-- Bug Reports
-- API Testing
-- Software QA
-- User Acceptance Testing
-- Azure DevOps
-- Test Documentation
-
----
-
 ## Confidentiality Notice
 
 This is a portfolio demonstration sample. It is shared only to showcase QA testing and documentation skills. The files are watermarked and should not be copied, redistributed, or reused without permission.
 
----
+## Ownership and Reproduction Warning
 
-## Prepared For
+**Owned by Salveah M. Saclauso**
 
-Freelance QA / Software Testing portfolio use, including Upwork, OnlineJobs.ph, LinkedIn, and other remote work applications.
+This portfolio sample is provided solely for portfolio review and skills demonstration. Unauthorized copying, reproduction, redistribution, modification, publication, resale, or use of this material, in whole or in part, is strictly prohibited without the prior written consent of the author.
+
+Any improper use, unauthorized reproduction, or distribution of this material may be subject to applicable intellectual property laws and, where personal data or protected information is involved, the Data Privacy Act and related regulations.
